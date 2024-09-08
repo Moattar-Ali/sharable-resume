@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Dynamic Resume Generator</h1>
+
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <br>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <br>
+
+        <h2>Education</h2>
+        <label for="school">School/University:</label>
+        <input type="text" id="school" name="school" required>
+        <br>
+        <br>
+
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+        <br>
+        <br>
+
+        <label for="grad-year">Graduation Year:</label>
+        <input type="number" id="grad-year" name="grad-year" required>
+        <br>
+        <br>
+
+        <h2>Work Experience</h2>
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+        <br>
+        <br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>
+        <br>
+        <br>
+
+        <label for="years">Years Worked:</label>
+        <input type="number" id="years" name="years" required>
+        <br>
+        <br>
+
+        <h2>Skills</h2>
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" name="skills" required>
+        <br>
+        <br>
+
+        <button type="submit" style="background-color: rgb(255, 238, 238); color:orange; font-weight: bolder">Generate Resume</button>
+    </form>
+
+    <h2>Your Resume</h2>
+    <div id="resume"></div>
+
+    <!-- Add this button below the resume section in the HTML -->
+<button id="edit-resume-btn" style="display:none;">Edit Resume</button>
+<button id="save-resume-btn" style="display:none;">Save Changes</button>
+<div id="resume"></div>
+
+<h3>Share Your Resume</h3>
+<p>Your unique URL: <span id="resume-url"></span></p>
+<button id="copy-url-btn">Copy URL</button>
+<button id="share-email-btn">Share via Email</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
